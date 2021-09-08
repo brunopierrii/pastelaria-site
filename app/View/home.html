@@ -1,0 +1,13 @@
+<section>
+    <h1>Cardápio:</h1>
+
+    {% for postagem in postagens %}
+    <article>
+        <header>
+            <h2><a href="http://popzera/pasteldaPenha/?pagina=post&id={{postagem.id}}">{{postagem.id}}. {{postagem.titulo}}</a></h2>
+        </header>
+        <p>{{postagem.conteudo}}</p>
+    </article>
+    {% endfor %}
+
+</section>

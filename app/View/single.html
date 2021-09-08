@@ -1,0 +1,32 @@
+<style type="text/css">
+    h2 {
+        font: 25px Arial;
+        color: #FF4500;
+    }
+    
+    #coment {
+        font: 20px Arial;
+        color: #FF4500;
+    }
+</style>
+
+<section>
+    <article>
+        <header>
+            <h2>{{id}}. {{titulo}}</h2>
+        </header>
+        <p>{{conteudo}}</p>
+
+        <br>
+        <hr>
+        <br> {% if comentarios == false %}
+        <p>Não existe nenhum comentário para está postagem!</p>
+        {% else %} {% for comentario in comentarios %}
+        <h2 id="coment">Comentarios:</h2>
+        <h5>{{comentario.nome}}</h5>
+        <p>{{comentario.mensagem}}</p>
+        {% endfor %} {% endif %}
+    </article>
+
+
+</section>

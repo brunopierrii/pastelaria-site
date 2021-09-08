@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel da Penha</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="style/stylebasecss.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <style type="text/css">
+        .dir {
+            float: right;
+        }
+    </style>
+
+    <div class="container">
+        <img class="displayed" src="style/pastel.jpeg" width="320" ; height="320" alt="iconePastel">
+    </div>
+    <div id="corpo">
+        <div id="topo">
+
+            <head>
+                <nav>
+                    <a href="http://popzera/pasteldaPenha/">Início</a> |
+                    <a href="http://popzera/pasteldaPenha/?pagina=sobre">Sobre</a>
+                    <a href="http://popzera/pasteldaPenha/?pagina=admin&metodo=index" class="dir">Admin</a>
+                </nav>
+            </head>
+        </div>
+        <div id="conteudo">
+            {{area_dinamica}}
+        </div>
+    </div>
+</body>
+
+</html>
